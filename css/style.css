@@ -1,0 +1,122 @@
+html{
+    background-color:#2f2f2f;
+    color: #ccc;
+}
+h3{
+    margin-top: 0px;
+    margin-bottom: vh;
+    float: left;
+}
+
+#ttl{
+    float: left;
+    margin-right: 1vw;
+    font-size: 20px;
+}
+.CodeMirror {
+    border: 1px solid #bbb;
+    width: 100%;
+    height: 67vh;
+    /* font-family: monospace, 'Bitstream Vera Sans Mono', 'Andale Mono', 'Lucida Console', 'Courier New', Courier, Monaco; */
+    font-family: "Red Hat Mono", monospace;
+}
+
+textarea {
+    border: 1px solid #bbb;
+    background-color: #272822;
+    color: #ccc;
+    resize: none;
+    width: 100%;
+    height: 10vh;
+}
+
+/* 
+.field1 {
+    display: flex;
+    margin-bottom: 0.5vh;
+}
+.field2 {
+    display: flex;
+    margin-bottom: 0.5vh;
+} */
+
+/* .textarea {
+    float:left;
+    margin-right: 1vw;
+} */
+button{
+    font-family: Monaco;
+    margin-right: 2vw;
+    height: 26px;
+}
+#terminal_clear{
+    margin-left: 1vw;
+}
+#fontsize_down{
+    margin-left: 1vw;
+    margin-right: 0vw;
+}
+#fontsize{
+    margin-left: 3vw;
+}
+#file{
+    margin-left: 0vw;
+}
+#run{
+    margin-right: 0vw;
+}
+#save_main{
+    visibility: hidden;
+    height: 30px;
+    float: left;
+}
+#save_main.is-hidden {
+    visibility: visible;
+}
+#delete_main{
+    visibility: hidden;
+    height: 30px;
+    float: left;
+}
+#delete_main.is-hidden {
+    visibility: visible;
+}
+#file_list{
+    visibility: hidden;
+    height: 30px;
+}
+#file_list.is-hidden {
+    visibility: visible;
+}
+footer{
+    text-align: center;
+}
+
+#connectButton{
+    clear: both;
+}
+
+.gutter {
+  cursor: ew-resize;
+}
+
+#flex {
+  display: flex;
+}
+
+.split {
+  float: left;
+}
+
+/* #one {
+  background-color: rgb(9, 9, 215);
+  width:90%;
+}
+
+#two {
+  background-color: rgb(170, 255, 181);
+} */
+
+/* #three {
+  background-color: #fac;
+} */
