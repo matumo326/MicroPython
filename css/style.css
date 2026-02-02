@@ -1,126 +1,127 @@
-html{
-    background-color:#2f2f2f;
+html {
+    background-color: #2f2f2f;
     color: #ccc;
 }
-h3{
+
+h3 {
     margin-top: 0px;
     margin-bottom: vh;
     float: left;
 }
 
-#ttl{
+#ttl {
     float: left;
     margin-right: 1vw;
     font-size: 20px;
 }
-.CodeMirror {
-    border: 1px solid #bbb;
-    width: 100%;
-    height: 67vh;
-    /* font-family: monospace, 'Bitstream Vera Sans Mono', 'Andale Mono', 'Lucida Console', 'Courier New', Courier, Monaco; */
-    font-family: "Red Hat Mono", monospace;
-}
 
-textarea {
+#outputArea,
+#txt-editor {
     border: 1px solid #bbb;
     background-color: #272822;
     color: #ccc;
     resize: none;
     width: 100%;
-    height: 10vh;
+    height: 100%;
 }
 
-/* 
-.field1 {
-    display: flex;
-    margin-bottom: 0.5vh;
+.CodeMirror {
+    border: 1px solid #bbb;
+    width: 100%;
+    height: calc(100% - 83px);
+    /* font-family: monospace, 'Bitstream Vera Sans Mono', 'Andale Mono', 'Lucida Console', 'Courier New', Courier, Monaco; */
+    font-family: "Red Hat Mono", monospace;
 }
-.field2 {
-    display: flex;
-    margin-bottom: 0.5vh;
-} */
 
-/* .textarea {
-    float:left;
-    margin-right: 1vw;
-} */
-button{
+button {
     font-family: Monaco;
     margin-right: 2vw;
     height: 26px;
 }
-#terminal_clear{
+
+#terminal_clear {
     margin-left: 1vw;
 }
-#fontsize_down{
+
+#fontsize_down {
     margin-left: 1vw;
     margin-right: 0vw;
 }
-#fontsize{
+
+#fontsize {
     margin-left: 3vw;
 }
-#file{
+
+#file {
     margin-left: 0vw;
 }
-#run{
+
+#run {
     margin-right: 0vw;
 }
-#save_main{
+
+#save_main {
     visibility: hidden;
     height: 30px;
     float: left;
 }
+
 #save_main.is-hidden {
     visibility: visible;
 }
-#delete_main{
+
+#delete_main {
     visibility: hidden;
     height: 30px;
     float: left;
 }
+
 #delete_main.is-hidden {
     visibility: visible;
 }
-#file_list{
+
+#file_list {
     visibility: hidden;
     height: 30px;
 }
+
 #file_list.is-hidden {
     visibility: visible;
 }
-footer{
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     text-align: center;
 }
 
-#connectButton{
+#connectButton {
     clear: both;
 }
 
 .gutter {
-    cursor: ew-resize;
-    background-image: url("sep.png");
-    /* background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg=='); */
     background-repeat: no-repeat;
     background-position: 50%;
 }
 
+.gutter.gutter-horizontal {
+    cursor: col-resize;
+    background-image: url("sep_v.png");
+}
+
+.gutter.gutter-vertical {
+    cursor: row-resize;
+    background-image: url("sep_h.png");
+}
+
 #flex {
-  display: flex;
+    display: flex;
+    flex-direction: row;
+    height: 92vh;
 }
 
-.split {
-  float: left;
+#three {
+    height: 96vh;
 }
-
-/* #one {
-  background-color: rgb(9, 9, 215);
-  width:90%;
-}
-
-#two {
-  background-color: rgb(170, 255, 181);
-} */
-
-/* #three {
-  background-color: #fac;
-} */
